@@ -1,12 +1,12 @@
 /**
  * var, const and let
  */
-let counter = 23;
+let counter = 0;
 let colors = ["red", "green", "blue"];
 
-function onClick() {}
+function onClick() {
+  let currentColour = colors[0];
+}
 
-const changeColorBtn = (document.getElementById("changeColorBtn").innerHTML =
-  "Change Btn");
-
-console.log(changeColorBtn);
+// DOM and DOM manipulation
+const changeColorBtn = document.querySelector("#changeColorBtn");
