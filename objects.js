@@ -4,9 +4,13 @@
  */
 
 let myObject = {
-  name: "John",
-  age: 20,
-  func: function () {},
+  name: "John", // property
+  age: 20, // property
+  body: {
+    height: 180,
+    weight: {},
+  },
+  func: function () {}, // method
 };
 
 myObject["name"]; // "John" --> string

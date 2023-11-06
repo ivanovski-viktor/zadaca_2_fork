@@ -5,4 +5,4 @@ const myNegativeNumber = -10;
 const myString = "Hello World!";
 const myStringDouble = "Hello World!";
 
-const myBoolean = true;
+const myBoolean = true || false;
