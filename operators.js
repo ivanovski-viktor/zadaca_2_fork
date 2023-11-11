@@ -40,6 +40,8 @@ let b = "2" + "3"; // "23"
 
 let c = a == b; // true
 
+3 % 3;
+
 //console.log(c);
 
 // Exercise 5.

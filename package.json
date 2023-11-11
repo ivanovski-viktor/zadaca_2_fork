@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "zadaca_3": "parcel index.zadaca_3.html"
   },
   "keywords": [],
   "author": "",

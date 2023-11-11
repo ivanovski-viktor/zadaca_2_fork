@@ -13,6 +13,13 @@ function onClick() {
 }
 // DOM and DOM manipulation
 const changeColorBtn = document.querySelector("#changeColorBtn");
+const reverseColorBtn = document.querySelector("#reverseColorBtn");
 changeColorBtn.addEventListener("click", onClick);
+reverseColorBtn.addEventListener("click", onReverseClick);
 
-// Create reverse functionality of changing colors on Reverse color button
+function onReverseClick() {
+  let currentColor = document.body.style.backgroundColor;
+  const index = colors.indexOf(currentColor);
+  document.body.style.backgroundColor =
+    colors[(index - 1 + colors.length) % colors.length];
+}
