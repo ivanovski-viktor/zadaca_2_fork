@@ -9,11 +9,11 @@ function onClickCreateTask() {
     spanElement.textContent = inputTask.value;
 
     let completeBtn = document.createElement("button");
-    completeBtn.textContent = "Completed";
+    completeBtn.innerHTML = "Completed";
     completeBtn.addEventListener("click", onClickComplete);
 
     let deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Deleted";
+    deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteBtn.addEventListener("click", onClickDelete);
 
     listElement.appendChild(spanElement);
@@ -40,6 +40,6 @@ function onClickComplete(event) {
 }
 
 function onClickDelete(event) {
-  let listElement = event.target.parentElement;
-  taskList.removeChild(listElement);
+  let element = event.target.closest("li");
+  element.remove(element);
 }
