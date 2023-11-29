@@ -4,6 +4,7 @@
 let counter = 0;
 let colors = ["red", "green", "blue", "yellow"];
 
+// function declaration
 function onClick() {
   let n = colors.length;
   // Equvalent expressions counter = counter + 1; counter += 1;

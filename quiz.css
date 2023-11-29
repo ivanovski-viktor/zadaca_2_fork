@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#quiz-container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+button {
+  margin-top: 10px;
+}
