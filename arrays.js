@@ -9,7 +9,7 @@
  (*** or from an array-like object, such as a NodeList or arguments object ***).
  */
 
-let myArray = [1, 2, 3, 4, "five", ["six", "seven", "eight"]];
+let myArray = [1, 2, 3, 4];
 
 let myArray2 = [
   [1, 2],
@@ -23,3 +23,59 @@ myArray[1]; // 2
 let pElements = ["<p>1</p>", "<p>2</p>", "<p>3</p>"];
 
 // pElements[1].....
+
+// Array advanced concepts:
+// 1. Array methods (ES6): forEach, map, filter and reduce.
+let newArray = [];
+// let iteratedArray = myArray.forEach((element) => {
+//   newArray.push(element * 2);
+// });
+// let myArray = [1, 2, 3, 4];
+let filteredArray = myArray.filter((element) => {
+  return element > 2;
+});
+let mappedArray = myArray.map((element) => {
+  return element + 2;
+});
+
+// filter numbers greater than 2 and multiple by 3
+let multipledNumbers = myArray
+  .filter((number) => {
+    return number > 2;
+  })
+  .map((number) => {
+    return number * 3;
+  });
+
+let nodes = [{}, {}, {}];
+let filteredNodes = nodes.filter((node) => {});
+
+console.log(multipledNumbers);
+
+let notReducedArr = [
+  "The",
+  "quick",
+  "brown",
+  "fox",
+  "jumps",
+  "over",
+  "the",
+  "lazy",
+  "dog",
+];
+
+let reducedElement = notReducedArr.reduce((accumulator, element) => {
+  return (accumulator += element);
+}, "");
+
+console.log(reducedElement);
+
+// -- double numbers
+// -- filter even numbers
+// -- calculate total (reduce)
+// -- transform uppercase
+// -- find longest word (reduce)
+// 2. Difference between map and forEach (distructive vs. non-distructive methods)
+// 3. Array sorting
+
+// Homework: reduce tasks from above!
