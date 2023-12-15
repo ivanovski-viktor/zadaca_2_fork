@@ -14,6 +14,8 @@ function Person(name, age) {
 const person1 = new Person("Alice", 30);
 const person2 = new Person("Bob", 25);
 
+console.log(person1.sayHello()); // Alice
+
 // Constructor's prototype property and adding a method to the prototype
 Person.prototype.sayHello = function () {
   console.log(`Hello, my name is ${this.name}`);

@@ -77,5 +77,11 @@ console.log(reducedElement);
 // -- find longest word (reduce)
 // 2. Difference between map and forEach (distructive vs. non-distructive methods)
 // 3. Array sorting
+let numbers = [1, 3, 5, 3, 2];
+numbers.sort((a, b) => {
+  return a - b;
+});
+
+console.log(numbers);
 
 // Homework: reduce tasks from above!
